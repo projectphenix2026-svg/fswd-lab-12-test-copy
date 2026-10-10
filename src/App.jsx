@@ -16,7 +16,7 @@ export default function App()
   {
     async function load()
     {
-      const reply = await fetch("services.json");
+      const reply = await fetch("student-services.json");
       if (!reply.ok)
       {
         setProblem("Could not load the services.");
