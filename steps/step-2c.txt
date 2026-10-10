@@ -1,0 +1,10 @@
+Exercise 2 · Step C · a teammate's release goes wrong
+
+1. Let the teammate's commit arrive in your project.
+     npm run teammate
+
+2. Read the newest three commits.
+     git log --oneline -3
+
+3. Push it: the workflow publishes whatever reaches GitHub.
+     git push

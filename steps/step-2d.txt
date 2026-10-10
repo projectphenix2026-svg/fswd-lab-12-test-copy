@@ -1,0 +1,13 @@
+Exercise 2 · Step D · rolled back
+
+1. Find the id of the teammate's commit.
+     git log --oneline -3
+
+2. Undo that one commit. Type its id in place of ID.
+     git revert --no-edit ID
+
+3. Read the history: the wrong commit is still there, its revert above it.
+     git log --oneline -4
+
+4. Send the revert to GitHub.
+     git push

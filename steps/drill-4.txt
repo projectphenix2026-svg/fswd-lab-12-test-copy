@@ -1,0 +1,14 @@
+Drill 4 · one commit undone
+
+The commit "Move the shuttle to Gate 9" is wrong: there is no Gate 9.
+
+1. Read the board as it stands, and the history.
+     cat ../practice/board.txt
+     git -C ../practice log --oneline
+
+2. Undo that one commit. Type its id in place of ID.
+     git -C ../practice revert --no-edit ID
+
+3. Read the board and the history again.
+     cat ../practice/board.txt
+     git -C ../practice log --oneline

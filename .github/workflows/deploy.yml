@@ -1,0 +1,50 @@
+# .github/workflows/deploy.yml - GIVEN, finished. You change nothing here.
+# After every push to main, GitHub runs these steps on a computer of its own: it fetches your files, builds the
+# site with  npm run build , and puts the folder dist online with GitHub Pages. Nobody types a password or a key.
+name: Publish the site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # which release was built: read from dist/version.json
+      - id: release
+        run: echo "version=$(jq -r .version dist/version.json)" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  # nothing goes online while the version is still 0.0.0: there is no release yet
+  deploy:
+    needs: build
+    if: needs.build.outputs.version != '0.0.0'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

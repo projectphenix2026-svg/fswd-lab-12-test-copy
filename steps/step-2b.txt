@@ -1,0 +1,12 @@
+Exercise 2 · Step B · release 1.1.0
+
+First, in the editor:
+     src/version.js    the new version
+     CHANGELOG.md      its line, above the line of 1.0.0
+
+Then, in the terminal, the five commands of a release:
+     git add -A
+     git commit -m "v1.1.0: search for a service"
+     git push
+     git tag v1.1.0
+     git push origin v1.1.0

@@ -1,0 +1,10 @@
+[
+  { "name": "Shuttle office", "place": "Main gate", "opens": "07:00", "closes": "19:00", "note": "Passes, routes and lost tickets" },
+  { "name": "Campus store", "place": "Block B", "opens": "09:00", "closes": "17:30", "note": "Notebooks, pens and lab coats" },
+  { "name": "Fest desk", "place": "Student centre", "opens": "10:00", "closes": "16:00", "note": "Registrations for the fest's events" },
+  { "name": "Coding club", "place": "Lab 4, Block C", "opens": "16:00", "closes": "18:00", "note": "Weekly contests and practice" },
+  { "name": "Health centre", "place": "Near Gate 2", "opens": "09:00", "closes": "17:00", "note": "A nurse on duty, and first aid" },
+  { "name": "Exam cell", "place": "Admin block", "opens": "10:00", "closes": "16:00", "note": "Hall tickets and re-evaluation forms" },
+  { "name": "Placement cell", "place": "Block D", "opens": "09:30", "closes": "17:30", "note": "Drive dates and mock interviews" },
+  { "name": "Scholarship desk", "place": "Admin block", "opens": "10:00", "closes": "13:00", "note": "Forms, and their last dates" }
+]

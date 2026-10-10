@@ -1,0 +1,10 @@
+Exercise 1 · Step D · tagged, and live
+
+1. Name your newest commit v1.0.0.
+     git tag v1.0.0
+
+2. A tag travels to GitHub by its own command.
+     git push origin v1.0.0
+
+3. See the name beside its commit.
+     git log --oneline -3

@@ -1,0 +1,13 @@
+Drill 3 · a history read, and one commit named
+
+1. Make the practice repository: a folder of its own, beside this project.
+     npm run practice
+
+2. Read its history, newest first. One line is one commit: an id, a message.
+     git -C ../practice log --oneline
+
+3. Name the commit "Add the fest notice" v0.9.0. Type its id in place of ID.
+     git -C ../practice tag v0.9.0 ID
+
+4. Read the history again: the name stands beside its commit.
+     git -C ../practice log --oneline

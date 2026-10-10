@@ -1,0 +1,113 @@
+/* src/App.css - GIVEN, finished. Basic CSS only: colours, text, the box model and one phone-width rule. */
+body
+{
+  margin: 0;
+  background-color: aliceblue;
+  color: midnightblue;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.page
+{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1
+{
+  margin: 8px 0 4px;
+  font-size: 28px;
+}
+
+.lead
+{
+  margin: 0 0 16px;
+  color: darkslategray;
+}
+
+.search input
+{
+  width: 280px;
+  max-width: 90%;
+  padding: 10px;
+  border: 2px solid steelblue;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.count
+{
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.card
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  margin: 8px 12px 8px 0;
+  padding: 14px;
+  border: 1px solid lightsteelblue;
+  border-left: 6px solid teal;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card h2
+{
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.card p
+{
+  margin: 3px 0;
+}
+
+.hours
+{
+  color: teal;
+  font-weight: bold;
+}
+
+.note
+{
+  color: dimgray;
+  font-size: 14px;
+}
+
+.problem
+{
+  padding: 12px;
+  border: 2px solid firebrick;
+  border-radius: 8px;
+  background-color: mistyrose;
+  color: firebrick;
+  font-weight: bold;
+}
+
+.none
+{
+  font-style: italic;
+}
+
+.foot
+{
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid lightsteelblue;
+  color: darkslategray;
+  font-size: 14px;
+}
+
+@media (max-width: 600px)
+{
+  .card
+  {
+    display: block;
+    width: auto;
+    margin-right: 0;
+  }
+}

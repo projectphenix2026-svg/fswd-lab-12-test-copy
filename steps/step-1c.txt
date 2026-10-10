@@ -1,0 +1,16 @@
+Exercise 1 · Step C · committed, and pushed
+
+Before the commands, on GitHub: Settings, Pages, Source: GitHub Actions.
+The lab page shows where to press.
+
+1. See which files you have changed.
+     git status
+
+2. Put every change into the next commit.
+     git add -A
+
+3. Make the commit, with its message.
+     git commit -m "v1.0.0: the first dashboard"
+
+4. Send it to GitHub.
+     git push
